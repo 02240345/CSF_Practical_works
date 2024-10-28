@@ -1,0 +1,58 @@
+1. What are the advantages and disadvantages of the recursive approach compared to the iterative approach?
+
+Advantages of the Recursive Approach:
+
+Simplicity: Easier to understand for problems that fit a recursive pattern.
+Less Code: Often requires fewer lines of code.
+Intuitive: Good for problems like tree traversals and backtracking.
+
+Disadvantages:
+
+Performance: Can be slower and use more memory due to function calls.
+Stack Limits: Risk of stack overflow with deep recursion.
+Harder to Debug: More complex to trace execution.
+
+Advantages of the Iterative approach:
+
+Efficiency: Generally faster and uses less memory.
+Control: More control over the execution flow.
+No Stack Overflow: Doesn’t risk exceeding stack limits.
+
+Disadvantages:
+
+Complexity: Can be harder to write for inherently recursive problems.
+More Code: May require more lines of code.
+Less Intuitive: Not as straightforward for certain problems.
+
+
+2. How does memoization improve the performance of the recursive function? Are there any drawbacks?
+
+How Memoization Improves Performance:
+
+Stores Results: Memoization saves the results of expensive function calls.
+Avoids Recalculations: If the function is called again with the same inputs, it returns the stored result instead of recalculating.
+Faster Execution: This reduces the number of calculations, making the function run much faster.
+
+Drawbacks of Memoization:
+
+Extra Memory Use: It requires additional memory to store the results.
+Complexity: Adds complexity to the code, making it harder to understand.
+Not Always Applicable: Works best with functions that have overlapping subproblems; not useful for all problems.
+
+3. In what scenarios might you prefer to use a generator function over other implementations?
+
+Use a Generator When:
+
+Big Data: You have a lot of data and want to save memory.
+Endless Lists: You need a list that goes on forever (like counting).
+On-Demand: You want to create items only when you need them.
+Cleaner Code: You want your code to be easier to read.
+Keep Track: You need to remember where you are in a loop without extra work.
+
+4. How does the space complexity differ between these implementations?
+
+
+Regular Functions: Uses more memory (O(n)).
+Memoization: Uses extra memory for cache (O(n)).
+Iterative Functions: Uses little memory (O(1)).
+Generators: Uses the least memory (O(1)).
